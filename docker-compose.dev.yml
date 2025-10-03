@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  nuxt:
+    build:
+      context: .
+      target: dev
+    ports:
+      - "3000:3000"
+    environment:
+      # สำคัญสำหรับ Docker Desktop บน Windows/Mac ให้ HMR/Watch เห็นไฟล์
+      - HOST=0.0.0.0
+      - CHOKIDAR_USEPOLLING=1
+      - WATCHPACK_POLLING=true
+    volumes:
+      - .:/app
+      # กันไม่ให้ทับ node_modules ใน container
+      - /app/node_modules
+    command: npm run dev
