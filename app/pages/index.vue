@@ -42,6 +42,7 @@
           v-model="active"
           :items="items"
           orientation="vertical"
+      
         />
       </div>
     </div>
@@ -63,24 +64,25 @@ const active = ref(null);
 const items = [
   {
     date: "รับไฟล์ Excel และ PDF",
-    icon: "i-lucide-rocket",
+    icon: "streamline-freehand:book-library-shelf-1",
+    class: 'text-black font-bold ',
   },
   {
     date: "อ่านข้อมูลจาก Excel",
-    icon: "i-lucide-rocket",
+    icon: "streamline-freehand:app-window-search-text",
   },
   {
     date: "แยกหน้า PDF ตามข้อมูลใน Excel",
-    icon: "i-lucide-rocket",
+    icon: "streamline-freehand:connect-device-exchange",
   },
   {
     date: "สร้างไฟล์ ZIP สำหรับดาวน์โหลด",
-    icon: "i-lucide-rocket",
+    icon: "streamline-freehand:archive-box",
   },
 
   {
     date: "เสร็จสิ้น",
-    icon: "i-lucide-rocket",
+    icon: "fluent-mdl2:accept-medium",
   },
 ];
 
