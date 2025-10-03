@@ -70,19 +70,23 @@ const items = [
   {
     date: "อ่านข้อมูลจาก Excel",
     icon: "streamline-freehand:app-window-search-text",
+     class: 'text-black font-bold ',
   },
   {
     date: "แยกหน้า PDF ตามข้อมูลใน Excel",
     icon: "streamline-freehand:connect-device-exchange",
+     class: 'text-black font-bold ',
   },
   {
     date: "สร้างไฟล์ ZIP สำหรับดาวน์โหลด",
     icon: "streamline-freehand:archive-box",
+     class: 'text-black font-bold ',
   },
 
   {
     date: "เสร็จสิ้น",
     icon: "fluent-mdl2:accept-medium",
+     class: 'text-black font-bold ',
   },
 ];
 
